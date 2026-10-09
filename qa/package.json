@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "archive": "course-ebitda-scorm12.zip",
+  "sha256": "176d2f2ef46981ac33df9d17c647785c2fad95230866baced52d9e1906b1eb86",
+  "checks": [
+    "Manifest parses",
+    "Launch target present",
+    "All manifest files present",
+    "SCORM 1.2 SCO declaration"
+  ],
+  "boundary": "Structural test, not schema conformance or Moodle import"
+}
