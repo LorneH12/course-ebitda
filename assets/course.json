@@ -1,0 +1,133 @@
+{
+  "id": "ebitda",
+  "title": "EBITDA: Read the Number, Ask the Right Question",
+  "headline": "Understand the number.\nQuestion the story.",
+  "audience": "Team leaders reading a fictional operating review",
+  "need": "A manager mistakes an earnings measure for cash available to spend.",
+  "outcomes": [
+    "Calculate EBITDA from a simplified net-income bridge with no omitted or double-counted add-backs.",
+    "Choose a responsible interpretation of EBITDA and identify a needed follow-up."
+  ],
+  "concepts": [
+    {
+      "title": "Start with earnings",
+      "body": "EBITDA means earnings before interest, taxes, depreciation and amortization. For this simplified exercise, start with net income. Add back each listed expense once. All amounts use the same reporting period and unit."
+    },
+    {
+      "title": "Build a transparent bridge",
+      "body": "The arithmetic here is net income + interest expense + income tax expense + depreciation + amortization. The fictional dataset lists those expenses separately. If a report groups depreciation and amortization, do not also add their separate values again."
+    },
+    {
+      "title": "Keep the label accurate",
+      "body": "EBITDA is a non-GAAP measure. Additional exclusions create a differently defined measure, often called adjusted EBITDA. Inspect the reconciliation and definition before comparing reports. This lesson is conceptual financial literacy, not a company reporting policy."
+    },
+    {
+      "title": "Ask about cash separately",
+      "body": "Adding back noncash expenses does not account for every cash movement. Equipment purchases, changes in working capital, borrowing and debt repayment matter to available cash. A positive EBITDA result alone cannot establish that a purchase is affordable."
+    }
+  ],
+  "example": {
+    "title": "A fictional training-services unit",
+    "body": "For one year, net income is $120,000; interest expense $20,000; income tax expense $30,000; depreciation $15,000; amortization $5,000. These are separate amounts already deducted in arriving at net income.",
+    "steps": [
+      "Start at $120,000.",
+      "Add $20,000 + $30,000 + $15,000 + $5,000 = $70,000.",
+      "EBITDA is $190,000.",
+      "Before approving new equipment, inspect cash flow and funding commitments. EBITDA is not the cash balance."
+    ]
+  },
+  "practice": {
+    "prompt": "A second fictional unit reports net income 80, interest 10, taxes 20, depreciation 8 and amortization 2, all in thousands. What is EBITDA?",
+    "options": [
+      "80 thousand",
+      "120 thousand",
+      "110 thousand"
+    ],
+    "key": 1,
+    "feedback": "80 + 10 + 20 + 8 + 2 = 120. Keep the period and units consistent; every add-back appears once."
+  },
+  "draft": {
+    "prompt": "Draft a two-sentence note to a manager who wants to spend the entire $190,000 EBITDA on new equipment.",
+    "label": "Your interpretation and follow-up",
+    "model": "The unit’s EBITDA is $190,000 in this simplified bridge; it is not cash available for equipment. Review operating cash flow, working-capital needs and existing funding commitments before making a spending decision.",
+    "criteria": [
+      "Names EBITDA without calling it cash",
+      "Identifies the reporting period or scenario",
+      "Requests cash-flow or funding evidence",
+      "Avoids making a spending recommendation from EBITDA alone"
+    ]
+  },
+  "quiz": [
+    {
+      "prompt": "Net income 50, interest 5, taxes 10, depreciation 4 and amortization 1: what is EBITDA?",
+      "options": [
+        "50",
+        "70",
+        "65"
+      ],
+      "key": 1,
+      "feedback": "The sum is 70. The data use one period and one unit."
+    },
+    {
+      "prompt": "A report shows combined depreciation and amortization of 12, also broken out as 9 and 3. What do you add back?",
+      "options": [
+        "24",
+        "Only 9",
+        "12 once"
+      ],
+      "key": 2,
+      "feedback": "The combined amount already contains both components."
+    },
+    {
+      "prompt": "A positive EBITDA result establishes which conclusion?",
+      "options": [
+        "Cash is sufficient for a new purchase",
+        "The stated earnings bridge is positive; cash needs separate review",
+        "All debt can be repaid"
+      ],
+      "key": 1,
+      "feedback": "A positive earnings measure does not establish liquidity."
+    },
+    {
+      "prompt": "A team also excludes restructuring expense. What should you check?",
+      "options": [
+        "Whether the measure has a distinct definition and reconciliation",
+        "Only the font used on the chart",
+        "Whether every company excludes the same amount"
+      ],
+      "key": 0,
+      "feedback": "Additional exclusions need transparent labeling and reconciliation; comparability cannot be assumed."
+    },
+    {
+      "prompt": "Which follow-up best supports a spending discussion?",
+      "options": [
+        "Ignore the period",
+        "Treat EBITDA as bank cash",
+        "Review cash flows, commitments and the reporting basis"
+      ],
+      "key": 2,
+      "feedback": "The decision requires evidence beyond this earnings measure."
+    }
+  ],
+  "jobaid": [
+    "Confirm the definition, reporting period and units.",
+    "Trace each add-back to the net-income bridge once.",
+    "Distinguish EBITDA from adjusted measures.",
+    "Review cash-flow and funding evidence separately."
+  ],
+  "sources": [
+    [
+      "SEC: non-GAAP measures, section 103",
+      "https://www.sec.gov/rules-regulations/staff-guidance/corporation-finance-interpretations/non-gaap-financial-measures"
+    ]
+  ],
+  "duration": "12–15 minutes",
+  "version": "1.0.0",
+  "brand": {
+    "name": "intuit turbotax",
+    "context": "Independent portfolio study",
+    "primary": "#C8202F",
+    "ink": "#172B32"
+  },
+  "disclosure": "Original fictional workplace scenarios. This independent portfolio sample is not official employer or vendor training."
+}
